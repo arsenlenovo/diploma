@@ -1,0 +1,20 @@
+
+.Ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+.Nav .NavItem a {
+  transition: 0.5s;
+  color: rgb(131, 120, 120);
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+}
+.NavItem {
+  padding: 30px 20px;
+  font-size: 29px;
+}
+.Nav .NavItem a:hover {
+  color: #fff;
+  border-color: #fff;
+}
