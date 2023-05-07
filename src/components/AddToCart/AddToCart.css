@@ -1,0 +1,72 @@
+.AddToCart button {
+  background-color: #ffffffa1;
+  align-items: center;
+  display: flex;
+  transition: all 300ms;
+}
+
+.AddToCart button:hover {
+  background-color: #66666675;
+}
+
+.AddToCart button:hover > img {
+  filter: invert(0);
+}
+
+.AddToCart img {
+  filter: invert(1);
+  width: 30px;
+  height: 100%;
+}
+.AddToCart .product-num {
+  position: absolute;
+  border-radius: 10px;
+  background: #ff0000c9;
+}
+.Notification {
+  position: fixed;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #666666;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-in-out, slideUp 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translate(-50%, 100%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.Notification img {
+  width: 100px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+.Notification p mark {
+  background-color: #fff;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 15px;
+  color: green;
+}
