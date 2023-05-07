@@ -1,0 +1,12 @@
+.img-in-product {
+  width: 400px;
+}
+.paragraph-in-product {
+  color: rgb(0, 0, 0);
+}
+.Product {
+  display: flex;
+}
+.fd {
+  padding-top: 120px;
+}
