@@ -27,6 +27,7 @@ export default function Product() {
         <span>{product.price} som</span>
         <p className="paragraph-in-product">{product.description}</p>
         <p className="paragraph-in-product">{product.description2}</p>
+        <p className="paragraph-in-product">{product.description3}</p>
       </div>
     </div>
   );
