@@ -1,12 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
-import Contacts from "./pages/Contacts";
 import Home from "./pages/Home";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
 import {
-  categoryCollection,
   onAuthChange,
   onCategoriesLoad,
   ordersCollection,
