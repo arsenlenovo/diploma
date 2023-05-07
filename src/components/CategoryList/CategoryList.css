@@ -1,0 +1,31 @@
+.CategoryList ul li  {
+  list-style-type: none;
+}
+.CategoryList a{
+  text-decoration: none;
+  color: black;
+  padding-left: 5px;
+  transition: all 0.2s ease;
+  font-size: 20px;
+}
+.CategoryList a:hover {
+  color: chocolate;
+  padding-left: 5px;
+  transition: all 0.400s ease;
+  font-size: 25px;
+  border-bottom: 1.5px solid chocolate;
+}
+.CategoryList li{
+  margin: 25px 0;
+}
+.CategoryList{
+  background: rgb(201, 192, 192);
+  width: 230px;
+  border-radius: 10px;
+}
+.CategoryList h3 span{
+  color: rgb(185, 28, 109);
+}
+.CategoryList h3 {
+  color: rgb(0, 0, 0);
+}
