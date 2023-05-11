@@ -19,13 +19,12 @@ export default function AddToCart({ product }) {
   return (
     <div className="AddToCart">
       <button onClick={onAddToCartClick}>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-cart.svg" alt="CART" />
+        <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="CART" />
         Add To Cart
       </button>
       {showNotification && (
         <div className="Notification">
-          <img src="https://cdn-icons-png.flaticon.com/512/1442/1442912.png" alt="CHECKMARK" />
-          <p>Product <mark>successfully</mark> added to cart</p>
+          <img loading="eager" src="https://github.com/arsenlenovo/Figma/blob/main/icons8-%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.gif?raw=true" alt="CHECKMARK" />
         </div>
       )}
     </div>

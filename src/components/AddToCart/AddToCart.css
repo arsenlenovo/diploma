@@ -6,7 +6,7 @@
 }
 
 .AddToCart button:hover {
-  background-color: #66666675;
+  background-color: #ea5656;
 }
 
 .AddToCart button:hover > img {
@@ -14,7 +14,7 @@
 }
 
 .AddToCart img {
-  filter: invert(1);
+  /* filter: invert(1); */
   width: 30px;
   height: 100%;
 }
@@ -32,12 +32,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #666666;
+  background-color: #fff;
   color: white;
   padding: 10px;
   border-radius: 5px;
   z-index: 9999;
   animation: fadeIn 0.3s ease-in-out, slideUp 0.5s ease-in-out;
+  width: 250px;
 }
 
 @keyframes fadeIn {
