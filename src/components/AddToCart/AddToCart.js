@@ -18,9 +18,9 @@ export default function AddToCart({ product }) {
 
   return (
     <div className="AddToCart">
-      <button onClick={onAddToCartClick}>
+      <button className="button-cart" onClick={onAddToCartClick}><span>Add To Cart</span>
+         
         <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="CART" />
-        Add To Cart
       </button>
       {showNotification && (
         <div className="Notification">
