@@ -1,16 +1,19 @@
 .AddToCart button {
-  background-color: #ffffffa1;
+  background-color: #8f7ae9a1;
   align-items: center;
   display: flex;
   transition: all 300ms;
+  margin-left: 80px;
 }
 
 .AddToCart button:hover {
   background-color: #ea5656;
+  color: #fff;
 }
 
 .AddToCart button:hover > img {
-  filter: invert(0);
+  filter: invert(1);
+  transition: all 300ms;
 }
 
 .AddToCart img {
