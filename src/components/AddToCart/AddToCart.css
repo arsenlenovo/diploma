@@ -1,23 +1,47 @@
 .AddToCart button {
-  background-color: #8f7ae9a1;
   align-items: center;
   display: flex;
   transition: all 300ms;
   margin-left: 80px;
 }
-
-.AddToCart button:hover {
-  background-color: #ea5656;
-  color: #fff;
-}
-
 .AddToCart button:hover > img {
   filter: invert(1);
   transition: all 300ms;
+} 
+.button-cart {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 7px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
-
+.button-cart span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button-cart span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button-cart:hover span {
+  padding-right: 17px;
+}
+.button-cart:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 .AddToCart img {
-  /* filter: invert(1); */
   width: 30px;
   height: 100%;
 }
