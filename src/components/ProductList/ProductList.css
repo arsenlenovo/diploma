@@ -32,6 +32,12 @@
 .nav {
   text-decoration: none;
   font-family: "Open sans", sans-serif;
+  color: #000;
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+.nav:hover {
+  color: #1100ff;
 }
 .picture {
   transition: 0.3s;
