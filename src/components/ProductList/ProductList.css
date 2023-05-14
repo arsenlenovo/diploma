@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Tinos&display=swap");
 
-.ProductList .Product {
+.ProductList .Products {
   display: flex;
   flex-direction: column;
   width: 300px;
 }
-.Product img {
+.Products img {
   width: 250px;
 }
 .Pro {
@@ -17,7 +17,7 @@
   box-shadow: 18px 15px 20px #5a4d4df7;
   margin-bottom: 26px;
 }
-.Product {
+.Products {
   margin-left: 40px;
 }
 .ProductList {
@@ -26,6 +26,8 @@
 }
 .price-in-product {
   margin-left: 10px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 700;
 }
 .nav {
   text-decoration: none;
@@ -51,4 +53,7 @@
   right: 0;
   bottom: 0;
   opacity: 0;
+}
+.div-inside-product {
+  background-color: #ffff;
 }
