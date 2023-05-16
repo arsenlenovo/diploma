@@ -4,7 +4,8 @@ import "./ProductList.css";
 import { NavLink } from "react-router-dom";
 import AddToCart from "../AddToCart/AddToCart";
 import AddProduct from "../AddProduct/AddProduct";
-import DeleteProduct from "../DeleteProduct/DeleteProduct"
+import DeleteProduct from "../DeleteProduct/DeleteProduct";
+
 
 export default function ProductList({ category }) {
   const { products } = useContext(AppContext);
