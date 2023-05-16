@@ -1,0 +1,14 @@
+.CartLink {
+  position: relative;
+}
+.img-in-cartList {
+  width: 49px;
+}
+.CartLink-total {
+  position: absolute;
+  top: -0px; 
+  right: -10px; 
+  color: #ffffff;
+  padding: 9px 30px; 
+  border-radius: 50%; 
+}
