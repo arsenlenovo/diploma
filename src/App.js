@@ -3,6 +3,7 @@ import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
+import ThankYou from "./pages/ThankYou";
 import { createContext, useEffect, useState } from "react";
 import {
   onAuthChange,
@@ -13,7 +14,6 @@ import {
 import { getDocs } from "firebase/firestore";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
-import ThankYou from "./pages/ThankYou";
 import Orders from "./pages/Orders";
 
 export const AppContext = createContext({
@@ -89,19 +89,20 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/ladies-watch" element={<h1>Ladies Watch</h1>} />
+            <Route path="/About" element={<h1>About</h1>} />
             {/*<Route path="/contacts" element={<Contacts />} /> */}
             <Route path="/arsen" element={<h1>Arsen</h1>} />
             <Route
               path="/children's-watch"
               element={<h1>Children's Watch</h1>}
             />
-            <Route path="/wall-clock" element={<h1>Wall Clock</h1>} />
+            <Route path="/contacts" element={<h1>Contacts</h1>} />
+            <Route path="/delivery" element={<h1>Delivery</h1>} />
             <Route path="/accessories" element={<h1>Accessories</h1>} />
             <Route path="/categories/:slug" element={<Category />} />
             <Route path="/products/:slug" element={<Product />} />
-            <Route path="/thank-you/:slug" element={<ThankYou />} />
-            <Route pathh="orders" element={<Orders />} />
+            <Route path="/thank-you" element={<ThankYou />} />
+            <Route path="orders" element={<Orders />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
