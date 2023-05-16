@@ -2,11 +2,11 @@
 .Ul {
   display: flex;
   list-style-type: none;
-  justify-content: center;
+  justify-content: space-around;
 }
 .Nav .NavItem a {
   transition: 0.5s;
-  color: rgb(131, 120, 120);
+  color: rgb(225, 164, 84);
   border-bottom: 1px solid transparent;
   text-decoration: none;
 }
@@ -15,6 +15,10 @@
   font-size: 29px;
 }
 .Nav .NavItem a:hover {
+  color: #fff;
+  border-color: #fff;
+}
+Nav .NavItem a:focus {
   color: #fff;
   border-color: #fff;
 }
