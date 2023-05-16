@@ -1,0 +1,119 @@
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Dancing+Script&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:wght@400;900&family=Space+Grotesk:wght@700&family=Tinos:ital,wght@1,700&display=swap');
+.button-in-auth {
+  background-color: #9393ff;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  justify-content: space-around;
+  margin-left: 17px;
+}
+.google {
+  width: 20px;
+}
+.Auth {
+  display: flex;
+  align-items: center;
+}
+.div-in-auth {
+  display: flex;
+  align-items: center;
+  font-family: 'Space Grotesk', sans-serif;
+  color: rgb(255, 255, 255);
+}
+.Link-in-auth {
+  color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
+  margin-left: 4px;
+  text-decoration: none;
+}
+.Link-in-auth:hover {
+  color: #1100ff;
+  transition: all 0.3s ease;
+} 
+
+
+/* button { 
+  cursor: pointer; 
+} 
+.Auth .S-Out-Btn { 
+  background-color: rgb(171, 33, 33); 
+} 
+.Auth .Btn-s { 
+  justify-content: space-between; 
+  display: flex; 
+} 
+ 
+.img-container img { 
+  width: 50px; 
+  border-radius: 25px; 
+  display: flex; 
+  cursor: pointer; 
+} 
+ 
+.LogOut-img img { 
+  width: 50px; 
+  border-radius: 25px; 
+  cursor: pointer; 
+} 
+ 
+.img-container { 
+  position: relative; 
+} 
+ 
+.img-menu { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+ 
+  --b: 3px; 
+  --s: .15em; 
+  --c: #000000; 
+   
+  padding: calc(.05em + var(--s)) calc(.3em + var(--s)); 
+  color: var(--c); 
+  --_p: var(--s); 
+  background: 
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--c) 0) 
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p)); 
+  transition: .3s linear, color 0s, background-color 0s; 
+  outline: var(--b) solid #0000; 
+  outline-offset: .2em; 
+  padding: 9px 25px; 
+ 
+  opacity: 0; 
+  visibility: hidden; 
+  position: absolute; 
+  top: 120%; 
+  left: -30px; 
+  padding: 20px 18px; 
+  transition: opacity 0.2s ease-in-out, visibility 0s linear 0.2s; 
+} 
+ 
+.img-menu p { 
+  color: #f1f1f1; 
+  cursor: pointer; 
+} 
+ 
+.img-container:hover .img-menu { 
+  opacity: 1; 
+  visibility: visible; 
+  transition-delay: 0s; 
+} 
+.LogOut-img img { 
+  filter: invert(0); 
+} 
+.LogOut-img img:hover { 
+  box-shadow: 4px 2px 9px; 
+  filter: drop-shadow(2px 4px 6px black); 
+} 
+.LogOut-img img:focus { 
+  filter: invert(0); 
+} */
