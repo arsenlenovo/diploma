@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import ThankYou from "./pages/ThankYou";
+import About from "./pages/About";
 import { createContext, useEffect, useState } from "react";
 import {
   onAuthChange,
@@ -89,7 +90,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/About" element={<h1>About</h1>} />
+            <Route path="/about" element={<About />} />
             {/*<Route path="/contacts" element={<Contacts />} /> */}
             <Route path="/arsen" element={<h1>Arsen</h1>} />
             <Route
