@@ -1,7 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Tinos&display=swap");
+
 .CartList .CartItem {
   display: flex;
   align-items: center;
+  border: 3px solid sandybrown;
+  border-radius: 7px;
+  margin: 9px 0;
+  transition: 0.1s;
+}
+.CartList .CartItem:hover {
+  background-color: rgb(214, 228, 240);
 }
 .CartList .CartItem img {
   width: 80px;
+  border-radius: 4px 0px 0px 4px;
+}
+.button {   
+  background-color: cadetblue;
+  width: 110px;
+  height: 40px;
+  color: white;
+  border-radius: 8px;
+  margin-left: 5px;
+  transition: 0.2s;
+}
+.button:hover {
+  background-color: rgb(37, 110, 199);
+}
+.Remove {
+  font-family: "Open sans", sans-serif;
+  font-size: 20px;
+}
+.link {
+  text-decoration: none;
+  font-family: "Open sans", sans-serif;
+  color: #000;
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+
+.link:hover {
+  color: #1100ff;
+}
+.price-in-product {
+  margin-left: 10px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 700;
+}
+.input-in-CartList {
+  width: 50px;
+  background-color: cadetblue;
+  margin-left: 20px;
+  color: #ffffff;
+  font-family: "Open sans", sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+}
+.input-in-CartList:hover {
+  background-color: rgb(37, 110, 199);
 }
