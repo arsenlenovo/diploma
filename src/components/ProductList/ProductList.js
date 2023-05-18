@@ -32,10 +32,12 @@ export default function ProductList({ category }) {
             />
           </div>
           <div className="Pro">
+            <div className="inside-div-Pro">
             <NavLink className="nav" to={"/products/" + product.slug}>
               {product.name}
             </NavLink>
             <span className="price-in-product">{product.price} som</span>
+            </div>
             <AddToCart product={product} />
             <DeleteProduct product={product} />
           </div>
@@ -44,9 +46,11 @@ export default function ProductList({ category }) {
     ));
 
   return (
-    <div className="ProductList">
-      {output}
-      <AddProduct category={category} />
-    </div>
+    <div className="container">
+      <div className="ProductList">
+        {output}
+        <AddProduct category={category} />
+      </div>
+</div>
   );
 }
