@@ -20,8 +20,10 @@ export default function Layout(props) {
       <aside>
         <CategoryList />
       </aside>
-      <main>{props.children}</main>
-      <footer>Footer</footer>
+      <div className="container">
+        <main>{props.children}</main>
+        <footer>Footer</footer>
+      </div>
     </div >
   );
 }
