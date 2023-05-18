@@ -19,8 +19,9 @@ body {
     "main aside"
     "footer footer";
   grid-template-columns: 7fr 2fr;
+  margin: 0 auto;
+  max-width: 1480px;
 }
-
 .Layout header {
   grid-area: header;
   display: flex;
@@ -64,12 +65,15 @@ body {
 
 aside {
   background-color: #eeeeee;
-  padding: 1rem 2rem;
+  /* padding: 1rem; */
   border: 2px solid #696969;
   border-radius: 10px;
-  margin: 47px 0;
+  margin: 54px 0px;
   height: 80vh;
-}
+  width: 250px;
+  max-width: 100%;
+  text-align: left;
+} 
 
 aside a {
   text-decoration: none;
@@ -97,4 +101,12 @@ footer {
       "footer";
     grid-template-columns: 1fr;
   }
+}
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
 }
