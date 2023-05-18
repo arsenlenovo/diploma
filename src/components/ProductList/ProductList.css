@@ -65,3 +65,43 @@
   background-color: #ffff;
 }
 
+.inside-div-Pro {
+  display: flex;
+  flex-direction: column;
+}
+
+.ProductList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px; /* Задайте желаемую максимальную ширину */
+  margin: 0 auto;
+}
+
+.Products {
+  width: 300px; /* Установите ширину продукта */
+  margin: 10px;
+}
+.container {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+  .ProductList {
+    justify-content: flex-start;
+    padding: 0 10px;
+  }
+
+  .Products {
+    width: calc(50% - 20px); /* Две колонки на мобильных устройствах */
+  }
+}
+
+@media (max-width: 480px) {
+  .Products {
+    width: 100%; /* Один продукт на узких устройствах */
+  }
+}
