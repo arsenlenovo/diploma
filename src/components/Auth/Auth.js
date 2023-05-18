@@ -1,5 +1,3 @@
-
-
 import { useContext } from "react"; 
 import { logIn, logOut } from "../../firebase"; 
 import { AppContext } from "../../App"; 
@@ -20,12 +18,14 @@ export default function Auth() {
               } 
               alt="Placeholder" 
             /> 
-            <div className="img-menu"> 
-              <NavLink to="/support">SupportPage</NavLink> 
-              <NavLink to="/orders">Orders</NavLink> 
-              <NavLink to="/profile">Your Profile</NavLink> 
-              <p>Coming Soon!</p> 
-              <button onClick={logOut}>Sign out</button> 
+            <div className="img-menu">  
+              <NavLink className="order" to="/orders">Orders</NavLink> 
+              <div className="div-in-auth">
+            <button className="button-in-auth" onClick={logOut}>
+            <img className="google-img" src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="google" />
+             Sign in
+            </button>
+              </div>
             </div> 
           </div> 
         </span> 
@@ -40,10 +40,13 @@ export default function Auth() {
               alt="Placeholder" 
             /> 
             <div className="img-menu"> 
-              <NavLink className="re" to="/support">SupportPage</NavLink> 
-              <NavLink to="/orders">Orders</NavLink> 
-              <NavLink to="/profile">Your Profile</NavLink> 
-              <button onClick={logIn}>Sign in</button> 
+              <NavLink className="order2" to="/orders">Orders</NavLink> 
+              <div className="div-in-auth">
+            <button className="button-in-auth" onClick={logIn}>
+            <img className="google-img" src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="google" />
+             Sign in
+            </button>
+          </div>
             </div> 
           </div> 
         </span> 
