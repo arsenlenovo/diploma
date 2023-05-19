@@ -1,9 +1,8 @@
-
 .Ul {
   display: flex;
   list-style-type: none;
-  justify-content: space-around;
   flex-wrap: wrap;
+  align-content: space-around;
 }
 .Nav .NavItem a {
   transition: 0.5s;
