@@ -3,6 +3,7 @@
   display: flex;
   list-style-type: none;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .Nav .NavItem a {
   transition: 0.5s;
