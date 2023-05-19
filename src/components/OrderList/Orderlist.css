@@ -1,6 +1,6 @@
 .OrderList .Order {
-  border-bottom: 1px solid #0000;
-  margin-bottom: 1em;
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
 }
 .OrderList .Order img {
   max-width: 40px;
