@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
+import Search from "../Search/Search";
 
 export default function Nav() {
   return (
@@ -17,6 +18,7 @@ export default function Nav() {
        <li className="NavItem">
          <NavLink to="/delivery">Delivery</NavLink>
        </li>
+      <Search />
      </ul>
    </nav>
   )
