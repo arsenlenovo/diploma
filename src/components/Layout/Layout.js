@@ -1,18 +1,29 @@
-import Nav from "../Nav/Nav";
-import "./Layout.css"
-import Logo from "../Logo/Logo";
+import "./Layout.css";
 import CategoryList from "../CategoryList/CategoryList";
 import CartLink from "../CartLink/CartLink";
 import Auth from "../Auth/Auth";
-// import Carousel from "../Carousel/Carousel";
+import { useState } from "react";
+import NavToggle from "../NavToggle/NavToggle";
+import Drawer from "../Drawer/Drawer";
+import NavLast from "../Nav/NavLast/NavLast";
+import Search from "../Search/Search";
 
 export default function Layout(props) {
+
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  function toggleDrawer() {
+    setDrawerOpen(!drawerOpen);
+  }
+
   return (
     <div className="Layout">
       <header>
         <div className="spacer">
-          <Logo />
-          <Nav />
+          <NavLast />
+          <Search />
+          <NavToggle callback={toggleDrawer} />
+          <Drawer open={drawerOpen} toggle={toggleDrawer} />
           <CartLink />
           <Auth />
         </div>
