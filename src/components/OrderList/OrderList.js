@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "../../App";
-import "./OrderList.css";
+import "./Orderlist.css";
 
 export default function OrderList() {
   // Получить заказы и продукты из контекста
