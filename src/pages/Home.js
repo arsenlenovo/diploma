@@ -1,16 +1,3 @@
-// import "./Home.css";
-
-// export default function Home() {
-//   return (
-//     <div className="Home">
-//       <h1>Home</h1>
-//       <p>This is </p>
-//        <img src="https://www.watchpro.com/2020/08/bg_new.jpg" alt="backraund" /> 
-           
-//     </div>
-//   )
-// }
-
 import React, { useState } from 'react';
 import './Home.css';
 
@@ -38,9 +25,9 @@ export default function Home() {
     <div className="Home">
       <h1>Home</h1>
       <img className="img-in-Home" src={images[currentImageIndex]} alt="background" />
-      <div>
-      <button onClick={handlePreviousImage}>&#8592;</button> {/* Стрелка влево */}
-        <button onClick={handleNextImage}>&#8594;</button> {/* Стрелка вправо */}
+      <div className="div-of-two-buttons">
+      <button className="button2-in-home" onClick={handlePreviousImage}>&#8592;</button> {/* Стрелка влево */}
+      <button className="button-in-home" onClick={handleNextImage}>&#8594;</button> {/* Стрелка вправо */}
       </div>
     </div>
   );
