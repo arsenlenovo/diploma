@@ -14,10 +14,10 @@
   padding: 30px 20px;
   font-size: 29px;
 }
+Nav .NavItem a:focus {
+  color: #fff;
+}
 .Nav .NavItem a:hover {
   color: #fff;
   border-color: #fff;
-}
-Nav .NavItem a:focus {
-  color: #fff;
 }
