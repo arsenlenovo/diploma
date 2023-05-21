@@ -37,6 +37,7 @@
   border-radius: 30px;
   background-color: moccasin;
   font-size: 30px;
+  border: none;
 } 
 .button2-in-home {
   margin-right: 50px;
@@ -45,7 +46,14 @@
   border-radius: 30px;
   background-color: moccasin;
   font-size: 30px;
+  border: none;
 } 
+.button-in-home:hover {
+  background-color: burlywood;
+}
+.button2-in-home:hover {
+  background-color: burlywood;
+}
 .div-of-two-buttons {
   display: flex;
   align-items: center;
