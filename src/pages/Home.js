@@ -26,8 +26,8 @@ export default function Home() {
       <h1>Home</h1>
       <img className="img-in-Home" src={images[currentImageIndex]} alt="background" />
       <div className="div-of-two-buttons">
-      <button className="button2-in-home" onClick={handlePreviousImage}>&#8592;</button> {/* Стрелка влево */}
-      <button className="button-in-home" onClick={handleNextImage}>&#8594;</button> {/* Стрелка вправо */}
+      <button className="button2-in-home" onClick={handlePreviousImage}>🢦</button> {/* Стрелка влево */}
+      <button className="button-in-home" onClick={handleNextImage}>🢧</button> {/* Стрелка вправо */}
       </div>
     </div>
   );
