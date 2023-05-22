@@ -1,28 +1,43 @@
-import AddCategory from "../AddCategory/AddCategory";
-import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { useContext, useState } from "react";
 import { AppContext } from "../../App";
+import "./CategoryList.css";
+import AddCategory from "../AddCategory/AddCategory";
 import DeleteCategory from "../DelateCategory/DeleteCategory";
-import ("./CategoryList.css");
 
 export default function CategoryList() {
-  const { categories } = useContext(AppContext);
-  
-  const output = categories.map((category) => (
-    <li key={category.id}>
-      <NavLink to={`/categories/${category.slug}`}>
-        {category.name}
-      </NavLink>
+  const { categories } = useContext(AppContext)
 
+  const output = categories.map((category) => (
+    <li className="item" key={category.id}>
+      <NavLink className="links" to={"/categories/" + category.slug}>{category.name}</NavLink>
       <DeleteCategory category={category} />
     </li>
   ));
 
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseLeave = () => {
+    setIsHovered(true);
+  };
+
   return (
     <div className="CategoryList">
-      <h3>Categories</h3>
-      <ul>{output}</ul>
-      <AddCategory />
+      <div className={`aside_nav ${isHovered ? 'hovered' : ''}`} onMouseLeave={handleMouseLeave}>
+        <i className="fa-solid fa-bars fa-beat fa-xl"></i>
+        <h2>Categories</h2>
+        <nav>
+          <h3>Categories</h3>
+          <ul>{output}</ul>
+          <AddCategory />
+        </nav>
+      </div>
+      <div className="mini_nav">
+        <h3>Categories</h3>
+        <ul>{output}</ul>
+        <AddCategory /> 
+      </div>
     </div>
   );
+
 }
