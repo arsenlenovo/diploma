@@ -33,8 +33,8 @@ export default function Layout(props) {
       </aside>
       <div className="container">
         <main>{props.children}</main>
+        </div>
         <footer>Footer</footer>
-      </div>
     </div >
   );
 }
