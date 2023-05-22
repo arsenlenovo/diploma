@@ -1,4 +1,4 @@
-.CategoryList ul li  {
+ .CategoryList ul li  {
   list-style-type: none;
 }
 .CategoryList a{
@@ -8,6 +8,10 @@
   transition: all 0.2s ease;
   font-size: 20px;
 }
+.CategoryList a:focus {
+  color: chocolate;
+  font-size: 25px;
+}
 .CategoryList a:hover {
   color: chocolate;
   padding-left: 5px;
@@ -15,21 +19,99 @@
   font-size: 25px;
   border-bottom: 1.5px solid chocolate;
 }
-.CategoryList li{
-  margin: 27px 0;
-}
 .CategoryList h3 span{
   color: rgb(185, 28, 109);
 }
 .CategoryList h3 {
   color: rgb(0, 0, 0);
 }
-
-
-
-
-
-
-
-
-
+.CategoryList {
+  text-align: center;
+  position: relative;
+  transition: all 0.3s;
+}
+.CategoryList .aside_nav {
+  display: none;
+  transition-delay: 10ms;
+}
+.CategoryList .mini_nav {
+  display: inline-block;
+  background-color: #eee;
+  width: 100%;
+  border-radius: 25px;
+  height: 60px;
+  z-index: 2;
+  left: 0;
+}
+.CategoryList .mini_nav ul {
+  position: absolute;
+  display: none;
+  background-color: #eeeeee;
+  z-index: 2;
+  width: 100%;
+  margin: 0;
+  left: 0;
+}
+.CategoryList .mini_nav ul .item .links {
+  opacity: 1;
+}
+.CategoryList .mini_nav h3 {
+  color: #064d54;
+  opacity: 1;
+}
+.CategoryList .mini_nav:hover {
+  height: 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.CategoryList .mini_nav:hover ul {
+  display: inline-block;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 0 0 25px;
+  color: #064d54;
+}
+.CategoryList .item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CategoryList .aside_nav h2 {
+  color: #064d54;
+  transform: rotate(-90deg);
+  margin: 225px 0 0 -25px;
+  position: absolute;
+  transition: 0.5s;
+  opacity: 1;
+}
+.CategoryList .aside_nav:hover h2 {
+  opacity: 0;
+}
+.CategoryList .links:hover {
+  transform: translateX(5px);
+}
+.CategoryList .aside_nav i {
+  margin: 28px 20px;
+  color: #064d54;
+}
+.CategoryList .aside_nav h2 {
+  color: #064d54;
+  transform: rotate(-90deg);
+  margin: 225px 0 0 -25px;
+  position: absolute;
+  transition: 0.5s;
+  opacity: 1;
+}
+.CategoryList .aside_nav:hover h2 {
+  opacity: 0;
+}
+.CategoryList .links {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #064d54;
+  opacity: 0;
+  transition: 0.3s;
+}
