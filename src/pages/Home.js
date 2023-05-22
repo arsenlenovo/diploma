@@ -11,23 +11,31 @@ export default function Home() {
     // Добавьте другие ссылки на изображения по мере необходимости
   ];
 
-  const handleNextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const handlePreviousImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
+  const handleDotClick = (index) => {
+    setCurrentImageIndex(index);
   };
 
   return (
     <div className="Home">
       <h1>Home</h1>
-      <img className="img-in-Home" src={images[currentImageIndex]} alt="background" />
-      <div className="div-of-two-buttons">
-      <button className="button2-in-home" onClick={handlePreviousImage}>🢦</button> {/* Стрелка влево */}
-      <button className="button-in-home" onClick={handleNextImage}>🢧</button> {/* Стрелка вправо */}
+      <div className="slider-container">
+        {images.map((image, index) => (
+          <img
+            key={index}
+            className={`slider-image ${index === currentImageIndex ? 'active' : ''}`}
+            src={image}
+            alt="background"
+          />
+        ))}
+      </div>
+      <div className="div-of-dots">
+        {images.map((image, index) => (
+          <button
+            key={index}
+            className={`dot ${index === currentImageIndex ? 'active' : ''}`}
+            onClick={() => handleDotClick(index)}
+          ></button>
+        ))}
       </div>
     </div>
   );
