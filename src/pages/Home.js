@@ -22,7 +22,7 @@ export default function Home() {
         {images.map((image, index) => (
           <img
             key={index}
-            className={`slider-image ${index === currentImageIndex ? 'active' : ''}`}
+            className={`slider-image ${index === currentImageIndex ? 'active-in-home' : ''}`}
             src={image}
             alt="background"
           />
@@ -32,7 +32,7 @@ export default function Home() {
         {images.map((image, index) => (
           <button
             key={index}
-            className={`dot ${index === currentImageIndex ? 'active' : ''}`}
+            className={`dot ${index === currentImageIndex ? 'active-in-home' : ''}`}
             onClick={() => handleDotClick(index)}
           ></button>
         ))}
