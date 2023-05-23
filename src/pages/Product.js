@@ -25,7 +25,7 @@ export default function Product() {
       </div>
       <div className="div-in-porduct">
         <span className="price-product">{product.price} som</span>
-        <AddToCart />
+        <AddToCart product={product} />
         <p className="paragraph-in-product">{product.description}</p>
         <p className="paragraph-in-product">{product.description2}</p>
         <p className="paragraph-in-product">{product.description3}</p>
