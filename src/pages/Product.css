@@ -1,12 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Barlow+Condensed:ital@1&family=Dancing+Script&family=Heebo:wght@500;700&family=Roboto:wght@400;900&family=Space+Grotesk:wght@700&family=Tinos:ital,wght@1,700&display=swap');
+
 .img-in-product {
   width: 400px;
 }
 .paragraph-in-product {
   color: rgb(0, 0, 0);
+  margin-left: 50px;
+  padding: 0 0 10px;
+  font-family: 'Arsenal', sans-serif;
+  font-weight: 700;
 }
+  .div-in-porduct {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}  
 .Product {
   display: flex;
 }
-.fd {
-  padding-top: 120px;
+.description {
+  padding-top: 90px;
+}
+.price-product {
+  margin-left: 50px;
 }
