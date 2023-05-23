@@ -24,11 +24,14 @@ export default function Product() {
         />
       </div>
       <div className="div-in-porduct">
-        <span>{product.price} som</span>
+        <span className="price-product">{product.price} som</span>
         <AddToCart />
         <p className="paragraph-in-product">{product.description}</p>
         <p className="paragraph-in-product">{product.description2}</p>
         <p className="paragraph-in-product">{product.description3}</p>
+        <p className="paragraph-in-product">{product.description4}</p>
+        <p className="paragraph-in-product">{product.description5}</p>
+        <p className="paragraph-in-product">{product.description6}</p>
       </div>
     </div>
   );
