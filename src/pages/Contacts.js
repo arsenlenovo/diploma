@@ -8,12 +8,12 @@ export default function Contacts() {
 
   return (
     <div className="Contacts">
+      <div className="contact-details">
       <h1>Contacts</h1>
       <h2>Our contacts:</h2>
       <p onClick={handlePhoneClick}>
-        <i className="fa fa fa-phone" /> +996 502 015 209
+      <strong className="contact-label">Tell:</strong><i className="fa fa fa-phone" /> +996 502 015 209
       </p>
-      <div className="contact-details">
         <p>
           <strong className="contact-label">Address:</strong> 123 Music Street, Cityville, State, Country
         </p>
@@ -24,12 +24,6 @@ export default function Contacts() {
           <strong className="contact-label">Working Hours:</strong> Monday to Friday, 9:00 AM - 6:00 PM
         </p>
       </div>
-      <p>
-        {/* <i className="fa-brands fa-youtube" />{" "}
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-          YouTube
-        </a> */}
-      </p>
     </div>
   );
 }
