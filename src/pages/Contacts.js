@@ -39,10 +39,10 @@ export default function Contacts() {
         <i className="fa fa-map-marker" /> Asia Mall
       </p>
       <p>
-        <i className="fa-brands fa-youtube" />{" "}
+        {/* <i className="fa-brands fa-youtube" />{" "}
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
           YouTube
-        </a>
+        </a> */}
       </p>
     </div>
   );
