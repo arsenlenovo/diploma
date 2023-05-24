@@ -16,6 +16,7 @@ import { getDocs } from "firebase/firestore";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import Orders from "./pages/Orders";
+import Contacts from "./pages/Contacts";
 
 export const AppContext = createContext({
   categories: [],
@@ -97,7 +98,7 @@ function App() {
               path="/children's-watch"
               element={<h1>Children's Watch</h1>}
             />
-            <Route path="/contacts" element={<h1>Contacts</h1>} />
+            <Route path="/contacts" element={<Contacts/>} />
             <Route path="/delivery" element={<h1>Delivery</h1>} />
             <Route path="/accessories" element={<h1>Accessories</h1>} />
             <Route path="/categories/:slug" element={<Category />} />
