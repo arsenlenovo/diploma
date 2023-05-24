@@ -7,6 +7,7 @@ import NavToggle from "../NavToggle/NavToggle";
 import Drawer from "../Drawer/Drawer";
 import NavLast from "../Nav/NavLast/NavLast";
 import Search from "../Search/Search";
+import Footer from "../Footer/Footer";
 
 export default function Layout(props) {
 
@@ -34,7 +35,9 @@ export default function Layout(props) {
       <div className="container">
         <main>{props.children}</main>
         </div>
-        <footer>Footer</footer>
+        <footer>
+          <Footer />
+        </footer>
     </div >
   );
 }
