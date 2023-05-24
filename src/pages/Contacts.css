@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Barlow+Condensed:ital@1&family=Dancing+Script&family=Heebo:wght@500;700&family=Roboto+Mono:ital@1&family=Roboto:wght@400;900&family=Space+Grotesk:wght@700&family=Tinos:ital,wght@1,700&display=swap');
+
 .contact-details {
   text-align: center;
+}
+.contacts-paragraph {
+  font-family: 'Roboto Mono', monospace;
+}
+.contact-label {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
 }
