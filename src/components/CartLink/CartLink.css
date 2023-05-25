@@ -4,12 +4,15 @@
 .img-in-cartList {
   width: 49px;
 }
+.CartLink:hover {
+  filter: invert(1);
+}
 .CartLink-total {
   position: absolute;
   top: -0px; 
   right: -10px; 
   color: #ffffff;
-  padding: 14px 29px;
+  margin: 14px 29px;
   font-family: "'Open Sans'";
   font-size: 14px;
   border-radius: 50%; 
