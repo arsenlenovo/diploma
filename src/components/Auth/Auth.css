@@ -70,11 +70,10 @@ button {
   transition-delay: 0s; 
 } 
 .LogOut-img img { 
-  filter: invert(0); 
+  filter: invert(2); 
 } 
 .LogOut-img img:hover { 
-  box-shadow: 4px 2px 9px; 
-  filter: drop-shadow(2px 4px 6px black); 
+  box-shadow: 1px 1px 9px 4px; 
 } 
 .LogOut-img img:focus { 
   filter: invert(0); 
