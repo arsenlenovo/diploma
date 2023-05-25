@@ -6,9 +6,9 @@ export default function Footer(){
 return(
   <div className="Footer">
     <div className="footer-logo" >
-      <NavLink  to="/">
-        <img src={logo} alt="logo" className="logo"/>
-      </NavLink>
+       <NavLink  to="/">
+        <img src={logo} alt="logo" className="logo2"/>
+      </NavLink> 
     </div>
     <div className="footer-nav">
       <ul>
@@ -20,7 +20,7 @@ return(
           <NavLink to="/about">About</NavLink>
         </li>
         <li className="NavFooter">
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/contacts">Contacts</NavLink>
         </li>
         <li className="NavFooter">
           <NavLink to="/delivery">Delivery</NavLink>
@@ -53,23 +53,23 @@ return(
         </li>
       </ul>
     </div>
-    {/* <div className="footer-icon">
+    <div className="footer-icon">
       <h1>Network</h1>
       <div className="footer-apps">
-        <a href="https://www.linkedin.com/in/%D0%B0%D0%B9%D0%B6%D0%B0%D0%BD%D1%8B%D0%BB-%D1%83%D0%BB%D0%B0%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0/">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt="linkedln"/> 
-        </a>
-      <a href="https://github.com/elukenova">
-        <img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png" alt="GitHub"/>
-      </a>
-      <a href="https://telegram.org/dl">
-        <img src="https://www.svgrepo.com/download/299513/telegram.svg" alt="Telegram"/>
-      </a>
       <a href="https://wa.me/qr/AVDLLXHGVDAPJ1" target="blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png" alt="WhatsApp"/>
       </a>
+      <a href="https://www.instagram.com/arsensio2006/">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png" alt="linkedln"/> 
+      </a>
+        <a href="https://web.telegram.org/a/">
+        <img src="https://www.svgrepo.com/download/299513/telegram.svg" alt="Telegram"/>
+      </a>
+      <a href="https://github.com/">
+        <img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png" alt="GitHub"/>
+      </a>
       </div>
-    </div> */}
+    </div> 
   </div>
 )
 }
