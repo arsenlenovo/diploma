@@ -36,7 +36,6 @@ export default function Home() {
 
   return (
     <div className="Home" onWheel={handleScroll}>
-      <h1>Home</h1>
       <div className="slider-container">
         {images.map((image, index) => (
           <img
