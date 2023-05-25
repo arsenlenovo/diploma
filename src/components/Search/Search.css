@@ -15,6 +15,9 @@
   text-align: center;
   outline: none;
 }
+.Search input:hover {
+  box-shadow: 0px 0px 9px 9px; 
+}
 .Search .NoResults {
   position: absolute;
 }
@@ -25,5 +28,4 @@
 }
 .Search .searcher {
   color: #064d54;
-  margin: 8px;
 }
