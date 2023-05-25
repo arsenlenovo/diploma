@@ -2,6 +2,7 @@
 
 .contact-details {
   text-align: center;
+  margin-top: 54px;
 }
 .contacts-paragraph {
   font-family: 'Roboto Mono', monospace;
@@ -13,4 +14,11 @@
 .contacts-paragraph-two {
   font-family: 'Tinos', serif;
   font-weight: 700;
+}
+
+.fg {
+  font-family: 'Roboto Mono', monospace;
+}
+.fg:hover {
+  border-bottom: 2px solid black;
 }
