@@ -1,4 +1,4 @@
- .CategoryList ul li  {
+.CategoryList ul li  {
   list-style-type: none;
 }
 .CategoryList a{
@@ -16,7 +16,6 @@
   color: chocolate;
   padding-left: 5px;
   transition: all 0.400s ease;
-  font-size: 25px;
   border-bottom: 1.5px solid chocolate;
 }
 .CategoryList h3 span{
@@ -27,7 +26,6 @@
 }
 .CategoryList {
   text-align: center;
-  position: relative;
   transition: all 0.3s;
 }
 .CategoryList .aside_nav {
@@ -39,18 +37,22 @@
   background-color: #eee;
   width: 100%;
   border-radius: 25px;
-  height: 60px;
   z-index: 2;
   left: 0;
 }
 .CategoryList .mini_nav ul {
-  position: absolute;
-  display: none;
   background-color: #eeeeee;
-  z-index: 2;
+  z-index: 2; 
   width: 100%;
   margin: 0;
   left: 0;
+  padding: 0 0 25px;
+}
+@media(max-width: 1020px) {
+  .CategoryList .mini_nav ul {
+    position: absolute;
+    display: none; 
+  }
 }
 .CategoryList .mini_nav ul .item .links {
   opacity: 1;
@@ -58,11 +60,10 @@
 .CategoryList .mini_nav h3 {
   color: #064d54;
   opacity: 1;
+  font-size: 30px;
 }
 .CategoryList .mini_nav:hover {
   height: 100%;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
 }
 .CategoryList .mini_nav:hover ul {
   display: inline-block;
@@ -114,4 +115,4 @@
   color: #064d54;
   opacity: 0;
   transition: 0.3s;
-}
+} 
