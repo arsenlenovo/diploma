@@ -22,8 +22,8 @@ export default function Layout(props) {
       <header>
         <div className="spacer">
           <NavLast />
-          <Search />
           <NavToggle callback={toggleDrawer} />
+          <Search />
           <Drawer open={drawerOpen} toggle={toggleDrawer} />
           <CartLink />
           <Auth />
