@@ -6,6 +6,7 @@
 }
 .contacts-paragraph {
   font-family: 'Roboto Mono', monospace;
+  padding-top: 10px;
 }
 .contact-label {
   font-family: 'Roboto Mono', monospace;
@@ -15,10 +16,19 @@
   font-family: 'Tinos', serif;
   font-weight: 700;
 }
-
+.contacts-paragraph-two {
+  padding-top: 10px;
+}
 .fg {
   font-family: 'Roboto Mono', monospace;
 }
 .fg:hover {
   border-bottom: 2px solid black;
+}
+.footer-icon {
+  text-align: center;
+}
+.footer-aps img {
+  width: 50px;
+  margin: 70px;
 }
