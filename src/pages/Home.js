@@ -7,7 +7,11 @@ export default function Home() {
     'https://swisstime-exclusive.kg/wp-content/uploads/2020/02/banner-ulysse-nardin.jpg',
     'https://www.pngplay.com/wp-content/uploads/9/Casio-Transparent-Background.png',
     'https://wallpapercave.com/wp/wp2009866.jpg',
-    'https://static.tildacdn.com/tild3932-6330-4530-b730-653361616632/casio-gshock-slide.jpeg', // Replace this URL with the URL of the next image
+    'https://static.tildacdn.com/tild3932-6330-4530-b730-653361616632/casio-gshock-slide.jpeg',
+    'https://www.casio-europe.com/resource/images/panel-brands/watches_gshock.jpg',
+    'https://media.gq.com/photos/64554fb91cd547b0719a48a6/16:9/w_2560%2Cc_limit/watches.jpg',
+    'https://static.independent.co.uk/2022/05/04/11/watch%20copy.jpg'
+     // Replace this URL with the URL of the next image
     // Add other image URLs as needed
   ];
 
