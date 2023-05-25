@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Barlow+Condensed:ital@1&family=Dancing+Script&family=Heebo:wght@500;700&family=Roboto+Mono:ital@1&family=Roboto:wght@400;900&family=Space+Grotesk:wght@700&family=Tinos:ital,wght@1,700&display=swap');
+
+.main-div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.Delivery {
+  text-align: center;
+  margin-top: 54px;
+}
+.delivery-paragraph {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+}
+.div-delivery {
+  width: 700px;
+  border: 2px solid black;
+  padding: 20px 20px;
+}
