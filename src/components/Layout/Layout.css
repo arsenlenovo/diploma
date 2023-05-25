@@ -21,6 +21,7 @@ body {
   grid-template-columns: 7fr 2fr;
   margin: 0 auto;
   max-width: 1480px;
+  overflow: hidden;
 }
 .Layout header {
   grid-area: header;
