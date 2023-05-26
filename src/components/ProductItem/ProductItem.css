@@ -9,14 +9,14 @@
   border: 2px solid #9b7b35;
   background-color: #008877;
   color: #ffba20;
-  width: 400px;
+  width: 450px;
 }
 .ProductItem .Product .block_img {
   max-width: 150px;
 }
 .ProductItem .Product .block_img img {
   vertical-align: bottom;
-  width: 100%;
+  width: 150px;
   align-self: start;
 }
 .ProductItem:nth-child(1) .Product {
