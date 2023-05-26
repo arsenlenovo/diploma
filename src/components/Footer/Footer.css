@@ -1,19 +1,19 @@
-.Footer{
+.Footer {
   background-color: #222;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.footer-apps img{
+.footer-apps img {
   width: 30px;
   margin: 10px;
 }
-.footer-nav ul li{
+.footer-nav ul li {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
 }
-.footer-nav a{
+.footer-nav a {
   text-decoration: none;
   color: white;
   transition: 0.5s;
@@ -21,32 +21,31 @@
 .NavFooter a:hover {
   color: grey;
 }
-.footer-category a{
+.footer-category a {
   text-decoration: none;
   color: white;
   transition: 0.5s;
-
 }
-.footer-category ul li{
+.footer-category ul li {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
 }
-.Footer h2{
+.Footer h2 {
   color: white;
   padding: 0;
 }
-.footer-icon h1{
+.footer-icon h1 {
   color: white;
   padding-left: 35px;
 }
-.footer-category a:hover{
+.footer-category a:hover {
   color: rgba(128, 128, 128, 0.984);
 }
-.footer-apps img:hover{
+.footer-apps img:hover {
   background-color: #222;
   border-radius: 10px;
-} 
+}
 .logo2 {
   width: 100px;
   padding-top: 20px;

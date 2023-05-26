@@ -6,7 +6,6 @@ import AddToCart from "../AddToCart/AddToCart";
 import AddProduct from "../AddProduct/AddProduct";
 import DeleteProduct from "../DeleteProduct/DeleteProduct";
 
-
 export default function ProductList({ category }) {
   const { products } = useContext(AppContext);
 
@@ -21,7 +20,7 @@ export default function ProductList({ category }) {
               loading="eager"
               width="300px"
               src={product.picture}
-              alt={product.name}   
+              alt={product.name}
             />
             <img
               className="picture picture--hover"
@@ -33,10 +32,10 @@ export default function ProductList({ category }) {
           </div>
           <div className="Pro">
             <div className="inside-div-Pro">
-            <NavLink className="nav" to={"/products/" + product.slug}>
-              {product.name}
-            </NavLink>
-            <span className="price-in-product">{product.price} som</span>
+              <NavLink className="nav" to={"/products/" + product.slug}>
+                {product.name}
+              </NavLink>
+              <span className="price-in-product">{product.price} som</span>
             </div>
             <AddToCart product={product} />
             <DeleteProduct product={product} />
@@ -51,6 +50,6 @@ export default function ProductList({ category }) {
         {output}
         <AddProduct category={category} />
       </div>
-</div>
+    </div>
   );
 }

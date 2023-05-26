@@ -7,12 +7,12 @@
 .AddToCart button:hover > img {
   filter: invert(1);
   transition: all 300ms;
-} 
+}
 .button-cart {
   border-radius: 6px;
   background-color: #f4511e;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   font-size: 18px;
   padding: 7px;
@@ -27,7 +27,7 @@
   transition: 0.5s;
 }
 .button-cart span:after {
-  content: '\00bb';
+  content: "\00bb";
   position: absolute;
   opacity: 0;
   top: 0;

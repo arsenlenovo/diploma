@@ -7,21 +7,21 @@ export default function Nav() {
   return (
     <nav className="Nav">
       <ul className="Ul">
-      <Logo />
+        <Logo />
         <li className="NavItem">
           <NavLink to="/">Home</NavLink>
         </li>
         <li className="NavItem">
           <NavLink to="/about">About</NavLink>
         </li>
-       <li className="NavItem">
-         <NavLink to="/contacts">Contacts</NavLink>
-       </li>
-       <li className="NavItem">
-         <NavLink to="/delivery">Delivery</NavLink>
-       </li>
-      <Search />
-     </ul>
-   </nav>
-  )
+        <li className="NavItem">
+          <NavLink to="/contacts">Contacts</NavLink>
+        </li>
+        <li className="NavItem">
+          <NavLink to="/delivery">Delivery</NavLink>
+        </li>
+        <Search />
+      </ul>
+    </nav>
+  );
 }

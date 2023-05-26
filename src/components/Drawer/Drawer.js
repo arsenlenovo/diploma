@@ -1,7 +1,5 @@
-
-
 import Nav from "../Nav/Nav";
-import "./Drawer.css"
+import "./Drawer.css";
 
 function Drawer({ open, toggle }) {
   const drawerClassNames = `Drawer ${open ? "open" : ""}`;
@@ -16,4 +14,4 @@ function Drawer({ open, toggle }) {
   );
 }
 
-export default Drawer; 
+export default Drawer;

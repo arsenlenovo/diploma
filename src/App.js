@@ -78,7 +78,7 @@ function App() {
       if (user) {
         user.isAdmin = user.email === "arsenarsensio2006@gmail.com";
       }
-      
+
       setUser(user);
     });
   }, []);
@@ -99,8 +99,8 @@ function App() {
               path="/children's-watch"
               element={<h1>Children's Watch</h1>}
             />
-            <Route path="/contacts" element={<Contacts/>} />
-            <Route path="/delivery" element={<Delivery/>} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/delivery" element={<Delivery />} />
             <Route path="/accessories" element={<h1>Accessories</h1>} />
             <Route path="/categories/:slug" element={<Category />} />
             <Route path="/products/:slug" element={<Product />} />

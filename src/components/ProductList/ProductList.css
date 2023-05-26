@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Tinos&display=swap");
 
- .ProductList .Products {
+.ProductList .Products {
   display: flex;
   /* flex-direction: column; */
   width: 300px;
@@ -20,11 +20,11 @@
 .Products {
   margin-left: 40px;
 }
- .ProductList {
+.ProductList {
   display: flex;
   flex-wrap: wrap;
   justify-self: center;
-} 
+}
 .price-in-product {
   margin-left: 10px;
   font-family: "Open sans", sans-serif;
@@ -87,7 +87,6 @@
   padding: 0 20px;
   box-sizing: border-box;
 }
-
 
 @media (max-width: 768px) {
   .ProductList {

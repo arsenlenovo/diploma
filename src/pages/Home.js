@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import './Home.css';
+import React, { useState } from "react";
+import "./Home.css";
 
 export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
-    'https://swisstime-exclusive.kg/wp-content/uploads/2020/02/banner-ulysse-nardin.jpg',
-    'https://www.pngplay.com/wp-content/uploads/9/Casio-Transparent-Background.png',
-    'https://wallpapercave.com/wp/wp2009866.jpg',
-    'https://static.tildacdn.com/tild3932-6330-4530-b730-653361616632/casio-gshock-slide.jpeg',
-    'https://www.casio-europe.com/resource/images/panel-brands/watches_gshock.jpg',
-    'https://media.gq.com/photos/64554fb91cd547b0719a48a6/16:9/w_2560%2Cc_limit/watches.jpg',
-    'https://static.independent.co.uk/2022/05/04/11/watch%20copy.jpg'
-     // Replace this URL with the URL of the next image
+    "https://swisstime-exclusive.kg/wp-content/uploads/2020/02/banner-ulysse-nardin.jpg",
+    "https://www.pngplay.com/wp-content/uploads/9/Casio-Transparent-Background.png",
+    "https://wallpapercave.com/wp/wp2009866.jpg",
+    "https://static.tildacdn.com/tild3932-6330-4530-b730-653361616632/casio-gshock-slide.jpeg",
+    "https://www.casio-europe.com/resource/images/panel-brands/watches_gshock.jpg",
+    "https://media.gq.com/photos/64554fb91cd547b0719a48a6/16:9/w_2560%2Cc_limit/watches.jpg",
+    "https://static.independent.co.uk/2022/05/04/11/watch%20copy.jpg",
+    // Replace this URL with the URL of the next image
     // Add other image URLs as needed
   ];
 
@@ -26,7 +26,9 @@ export default function Home() {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     } else if (delta < 0) {
       // Scroll up, go to the previous image or loop back to the last image
-      setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+      setCurrentImageIndex(
+        (prevIndex) => (prevIndex - 1 + images.length) % images.length
+      );
     }
   };
 
@@ -35,7 +37,9 @@ export default function Home() {
   };
 
   const goToPreviousImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentImageIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
   };
 
   return (
@@ -44,7 +48,9 @@ export default function Home() {
         {images.map((image, index) => (
           <img
             key={index}
-            className={`slider-image ${index === currentImageIndex ? 'active-in-home' : ''}`}
+            className={`slider-image ${
+              index === currentImageIndex ? "active-in-home" : ""
+            }`}
             src={image}
             alt="background"
           />
@@ -60,10 +66,35 @@ export default function Home() {
         {images.map((image, index) => (
           <button
             key={index}
-            className={`dot ${index === currentImageIndex ? 'active-in-home' : ''}`}
+            className={`dot ${
+              index === currentImageIndex ? "active-in-home" : ""
+            }`}
             onClick={() => handleDotClick(index)}
           ></button>
         ))}
+      </div>
+      <h1 className="h1-for-the-card">New branded watches</h1>
+      <div className="div-for-the-card">
+        <div className="video">
+          <iframe
+            width="1000"
+            height="515"
+            src="https://royal-time.ru/video/ek2QgmCk1gwV42DtKEHh0dj90jmOvkCJeZskKvBK.mp4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/TujZKIgY9KA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
   );

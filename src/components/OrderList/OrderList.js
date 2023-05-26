@@ -11,10 +11,10 @@ export default function OrderList() {
   }
 
   // Выводим все заказы.
-  const output = orders.map(order => {
+  const output = orders.map((order) => {
     // Вывести содержимое корзины для этого заказа
-    const cartOutput = Object.keys(order.cart).map(productId => {
-      const product = products.find(product => product.id === productId);
+    const cartOutput = Object.keys(order.cart).map((productId) => {
+      const product = products.find((product) => product.id === productId);
 
       if (!product) {
         return "Product not found";
@@ -23,24 +23,29 @@ export default function OrderList() {
       return (
         <div key={product.id}>
           <img src={product.picture} alt={product.name} />
-          {product.name}: {order.cart[productId]} X {product.price} som = {order.cart[productId] * product.price} som
+          {product.name}: {order.cart[productId]} X {product.price} som ={" "}
+          {order.cart[productId] * product.price} som
         </div>
       );
-    })
+    });
 
     return (
       <div key={order.id} className="Order">
-        <div><strong>Name</strong>: {order.name}</div>
-        <div><strong>Phone</strong>: {order.phone}</div>
-        <div><strong>Address</strong>: {order.address}</div>
-        <div><strong>Cart</strong>: {cartOutput}</div>
+        <div>
+          <strong>Name</strong>: {order.name}
+        </div>
+        <div>
+          <strong>Phone</strong>: {order.phone}
+        </div>
+        <div>
+          <strong>Address</strong>: {order.address}
+        </div>
+        <div>
+          <strong>Cart</strong>: {cartOutput}
+        </div>
       </div>
     );
-  })
+  });
 
-  return (
-    <div className="OrderList">
-      {output}
-    </div>
-  );
+  return <div className="OrderList">{output}</div>;
 }

@@ -1,87 +1,78 @@
-button { 
-  cursor: pointer; 
-} 
-.Auth .S-Out-Btn { 
-  background-color: rgb(171, 33, 33); 
-} 
-.Auth .Btn-s { 
-  justify-content: space-between; 
-  display: flex; 
-} 
- 
-.img-container img { 
-  width: 50px; 
-  border-radius: 25px; 
-  display: flex; 
-  cursor: pointer; 
-} 
- 
-.LogOut-img img { 
-  width: 50px; 
-  border-radius: 25px; 
-  cursor: pointer; 
-} 
- 
-.img-container { 
-  position: relative; 
-} 
- 
-.img-menu { 
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center; 
-  text-align: center; 
- 
-  --b: 3px; 
-  --s: .15em; 
-  --c: #000000; 
-   
-  padding: calc(.05em + var(--s)) calc(.3em + var(--s)); 
-  color: var(--c); 
-  --_p: var(--s); 
-  transition: .3s linear, color 0s, background-color 0s; 
-  outline: var(--b) solid #0000; 
-  outline-offset: .2em; 
-  padding: 9px 25px; 
-  opacity: 0; 
-  visibility: hidden; 
-  position: absolute; 
-  top: 120%; 
-  left: -30px; 
-  padding: 20px 18px; 
-  transition: opacity 0.2s ease-in-out, visibility 0s linear 0.2s; 
-  background-color: gray;
-  border-radius: 50px 10px;
+button {
+  cursor: pointer;
+}
+.Auth .S-Out-Btn {
+  background-color: rgb(171, 33, 33);
+}
+.Auth .Btn-s {
+  justify-content: space-between;
+  display: flex;
+}
+.img-container img {
+  width: 50px;
+  border-radius: 25px;
+  display: flex;
+  cursor: pointer;
+}
+.LogOut-img img {
+  width: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.img-container {
+  position: relative;
+}
+.img-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  --b: 3px;
+  --s: 0.15em;
+  --c: #000000;
+  padding: calc(0.05em + var(--s)) calc(0.3em + var(--s));
+  color: var(--c);
+  --_p: var(--s);
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.2em;
+  padding: 9px 25px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 120%;
+  left: -30px;
+  padding: 20px 18px;
+  transition: opacity 0.2s ease-in-out, visibility 0s linear 0.2s;
+  background-color: #eeeeee;
+  border-radius: 10px 50px;
   border: 4px solid #000000;
-} 
+}
 .re {
   color: rgb(225, 164, 84);
 }
- 
-.img-menu p { 
-  color: #f1f1f1; 
-  cursor: pointer; 
-} 
- 
-.img-container:hover .img-menu { 
-  opacity: 1; 
-  visibility: visible; 
-  transition-delay: 0s; 
-} 
-.LogOut-img img { 
-  filter: invert(2); 
-} 
-.LogOut-img img:hover { 
-  box-shadow: 1px 1px 9px 4px; 
-} 
-.LogOut-img img:focus { 
-  filter: invert(0); 
-} 
+.img-menu p {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+.img-container:hover .img-menu {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+.LogOut-img img {
+  filter: invert(2);
+}
+.LogOut-img img:hover {
+  box-shadow: 1px 1px 9px 4px;
+}
+.LogOut-img img:focus {
+  filter: invert(0);
+}
 .Auth {
   margin-left: 40px;
 }
-
 .button-in-auth {
   background-color: #3ae07a;
   color: white;
@@ -91,10 +82,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   justify-content: space-around;
-  margin-left: 17px;
 }
 .button-in-auth:hover {
   background-color: #9393ff;
@@ -110,13 +100,19 @@ button {
 .div-in-auth {
   display: flex;
   align-items: center;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   color: rgb(255, 255, 255);
 }
 .order {
   margin-bottom: 27px;
 }
-
 .order2 {
   margin-bottom: 27px;
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
+  color: rgb(107, 104, 104);
+  font-size: 20px;
+}
+.order2:hover {
+  color: rgb(1, 1, 1);
 }

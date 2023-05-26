@@ -6,5 +6,5 @@ export default function Logo() {
     <div className="Logo">
       <img src={logo} alt="logo" className="logo" />
     </div>
-  )
+  );
 }

@@ -10,7 +10,6 @@ import Search from "../Search/Search";
 import Footer from "../Footer/Footer";
 
 export default function Layout(props) {
-
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   function toggleDrawer() {
@@ -28,16 +27,16 @@ export default function Layout(props) {
           <CartLink />
           <Auth />
         </div>
-      </header >
+      </header>
       <aside>
         <CategoryList />
       </aside>
       <div className="container">
         <main>{props.children}</main>
-        </div>
-        <footer>
-          <Footer />
-        </footer>
-    </div >
+      </div>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
   );
 }

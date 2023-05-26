@@ -1,4 +1,3 @@
-
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AppContext } from "../../App";
@@ -12,7 +11,11 @@ export default function CartLink() {
   return (
     <div className="CartLink">
       <NavLink to="/cart">
-        <img className="img-in-cartList" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-cart.svg" alt="cart" />
+        <img
+          className="img-in-cartList"
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-cart.svg"
+          alt="cart"
+        />
         <span className="CartLink-total">{total}</span>
       </NavLink>
     </div>

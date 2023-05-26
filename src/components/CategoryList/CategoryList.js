@@ -6,11 +6,13 @@ import AddCategory from "../AddCategory/AddCategory";
 import DeleteCategory from "../DelateCategory/DeleteCategory";
 
 export default function CategoryList() {
-  const { categories } = useContext(AppContext)
+  const { categories } = useContext(AppContext);
 
   const output = categories.map((category) => (
     <li className="item" key={category.id}>
-      <NavLink className="links" to={"/categories/" + category.slug}>{category.name}</NavLink>
+      <NavLink className="links" to={"/categories/" + category.slug}>
+        {category.name}
+      </NavLink>
       <DeleteCategory category={category} />
     </li>
   ));
@@ -23,7 +25,10 @@ export default function CategoryList() {
 
   return (
     <div className="CategoryList">
-      <div className={`aside_nav ${isHovered ? 'hovered' : ''}`} onMouseLeave={handleMouseLeave}>
+      <div
+        className={`aside_nav ${isHovered ? "hovered" : ""}`}
+        onMouseLeave={handleMouseLeave}
+      >
         <i className="fa-solid fa-bars fa-beat fa-xl"></i>
         <h2>Categories</h2>
         <nav>
@@ -35,9 +40,8 @@ export default function CategoryList() {
       <div className="mini_nav">
         <h3>Categories</h3>
         <ul>{output}</ul>
-        <AddCategory /> 
+        <AddCategory />
       </div>
     </div>
   );
-
 }

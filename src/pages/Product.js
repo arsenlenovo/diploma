@@ -9,9 +9,9 @@ export default function Product() {
   const { params } = useMatch("/products/:slug");
   const { products } = useContext(AppContext);
   const product = products.find((product) => product.slug === params.slug);
-   if (!product) {
-     return <NotFound />;
-   }
+  if (!product) {
+    return <NotFound />;
+  }
 
   return (
     <div className="Product">

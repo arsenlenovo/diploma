@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 body {
@@ -65,13 +65,13 @@ body {
 }
 
 aside {
-  padding: 10px; 
+  padding: 10px;
   border-radius: 10px;
   margin: 54px 0px;
   width: 250px;
   max-width: 100%;
   text-align: left;
-} 
+}
 
 aside a {
   text-decoration: none;
