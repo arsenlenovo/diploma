@@ -77,7 +77,7 @@ export default function Home() {
       <h1 className="h1-for-the-card">New branded watches</h1>
       <div className="div-for-the-card">
         <div className="video">
-          <video width="1000" height="650" src={watch} controls></video>
+          <video className="video" width="1000" height="650" src={watch} controls></video>
         </div>
       </div>
     </div>
