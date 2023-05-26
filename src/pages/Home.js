@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Home.css";
+import watch from "../assets/watch.mp4";
 
 export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -76,24 +77,9 @@ export default function Home() {
       <h1 className="h1-for-the-card">New branded watches</h1>
       <div className="div-for-the-card">
         <div className="video">
-          <iframe
-            width="1000"
-            height="515"
-            src="https://royal-time.ru/video/ek2QgmCk1gwV42DtKEHh0dj90jmOvkCJeZskKvBK.mp4"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/TujZKIgY9KA"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          
+          <video width="1000" height="515" src={watch} controls>
+          </video>
         </div>
       </div>
     </div>
