@@ -78,7 +78,7 @@ export default function Home() {
       <div className="div-for-the-card">
         <div className="video">
           
-          <video width="1000" height="515" src={watch} controls>
+          <video width="1200" height="650" src={watch} controls>
           </video>
         </div>
       </div>
