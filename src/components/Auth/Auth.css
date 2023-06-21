@@ -105,6 +105,10 @@ button {
 }
 .order {
   margin-bottom: 27px;
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
+  color: rgb(107, 104, 104);
+  font-size: 20px;
 }
 .order2 {
   margin-bottom: 27px;
@@ -114,5 +118,8 @@ button {
   font-size: 20px;
 }
 .order2:hover {
+  color: rgb(1, 1, 1);
+}
+.order:hover {
   color: rgb(1, 1, 1);
 }
